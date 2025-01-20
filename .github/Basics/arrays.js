@@ -19,10 +19,32 @@ const temp={
     dept:"CSE",
     age:24
 }
-console.log(temp.name)
-console.log(temp["name"]);
+// console.log(temp.name)
+// console.log(temp["name"]);
 temp.welcome=function(){
     console.log(`welcome to your office, are you ${this.name}?`)
 }
-console.log(temp.welcome());
+// console.log(temp.welcome());
 
+const arr={}
+arr.name='web-developer'
+arr.id=123
+// console.log(arr)
+
+const real={
+    naav:'frontend developer',
+    user:{
+        user1:"manish",
+        lastname:"mengane"
+    }
+}
+// console.log(real.user.lastname)
+const obj1={1:'a', 2:'b'}
+const obj2={1:'c', 3:'d'}
+// const obj3={obj1, obj2}
+// const obj3=Object.assign({},obj1, obj2)
+
+// spread operator
+const obj3={...obj1, ...obj2} 
+// console.log(obj3);
+console.log(obj3);
